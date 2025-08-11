@@ -1,6 +1,6 @@
 function checkProbabilityTheory(count) {
-    let even = 0
-    let odd = 0
+    let evenCount = 0
+    let oddCount = 0
 
     for (let i = 0; i < count; i++) {
         let num = Math.floor(Math.random() * 901) + 100 // від 100 до 1000
@@ -12,10 +12,10 @@ function checkProbabilityTheory(count) {
     }
 
     console.log("Кількість згенерованих чисел: " + count)
-    console.log("Парних чисел: " + even)
-    console.log("Непарних чисел: " + odd)
-    console.log("Відсоток парних: " + (even / count * 100) + "%")
-    console.log("Відсоток непарних: " + (odd / count * 100) + "%")
+    console.log("Парних чисел: " + evenCount)
+    console.log("Непарних чисел: " + oddCount)
+    console.log("Відсоток парних: " + (evenCount / count * 100) + "%")
+    console.log("Відсоток непарних: " + (oddCount / count * 100) + "%")
 }
 
 // приклад
