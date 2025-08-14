@@ -8,7 +8,6 @@ var services = {
 services["Розбити скло"] = "200 грн";
 
 
-
 // Загальна вартість усіх наданих послуг
 services.price = function () {
   var total = 0;
@@ -45,7 +44,7 @@ services.maxPrice = function () {
   return (max === -Infinity ? "0 грн" : max + " грн");
 };
 
-// Демонстрація
+// Приклади використання
 console.log("Загальна вартість:", services.price());
 console.log("Мінімальна ціна:", services.minPrice());
 console.log("Максимальна ціна:", services.maxPrice());
